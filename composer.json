@@ -1,0 +1,27 @@
+{
+  "name": "administrator/php_composer_autload_demo",
+  "authors": [
+    {
+      "name": "malagege",
+      "email": "s9714020@gmail.com"
+    }
+  ],
+  "require": {},
+  "autoload": {
+    "psr-0": {
+      "Psr0\\Lib\\": "psr0/lib/src/"
+    },
+    "psr-4": {
+      "Psr4\\Lib\\": "psr4/lib/src/",
+      "App\\Controllers\\": "app/controllers/",
+      "App\\Models\\": "app/models/"
+    },
+    "classmap": [
+      "classmap/lib/src/"
+    ],
+    "files": [
+      "ext/common/functions.php",
+      "ext/system/functions.php"
+    ]
+  }
+}
